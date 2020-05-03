@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    options { timestamps () }
+    stages {
+        stage('First') {
+           steps {
+                sh 'pip3 install pytest'
+                sh 'pip3 install peewee'
+            }
+        }
+        stage('Second') {
+           steps {
+                sh 'python3 -m pytest --verbose --junitxml=report.xml'
+                junit '*.xml'
+            }
+        }
+        
+    }
+}
