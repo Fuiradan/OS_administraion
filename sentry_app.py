@@ -19,3 +19,7 @@ with sentry_sdk.configure_scope() as scope:
     scope.set_tag('sentry_tag')
     scope.set_tag('Lab_6')
 
+mas = [1,1,1,1,1,1,1]
+sum = 0
+for i in range(mas):
+   sum += 1 
