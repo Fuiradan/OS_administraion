@@ -1,2 +1,2 @@
 # admOS
-Operation system's administation 
+Репозиторий с лабораторными по предмету "Администирование ОС"
